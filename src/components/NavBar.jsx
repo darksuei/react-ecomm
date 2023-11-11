@@ -22,17 +22,16 @@ export default function NavBar() {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <div className="navbar-nav">
-            <NavLink className="nav-link active" aria-current="page" to="/">
+            <NavLink className="nav-link active" aria-current="page" to="/" style={{marginRight: "15px"}}>
               Home
             </NavLink>
-            <NavLink className="nav-link" to="/products">
+            <NavLink className="nav-link" to="/products" style={{marginRight: "15px"}}>
               Products
             </NavLink>
-            <NavLink className="nav-link" to="/about">
+            <NavLink className="nav-link" to="/about" style={{marginRight: "15px"}}>
               About
             </NavLink>
-            <NavLink className="nav-link" to="/contact">
+            <NavLink className="nav-link" to="/contact" style={{marginRight: "15px"}}>
               Contact
             </NavLink>
             <div className="nav-link buttons">
@@ -46,7 +45,6 @@ export default function NavBar() {
                 <i className="fa fa-shopping-cart me-1"></i> Cart (
                 {state.length})
               </NavLink>
-            </div>
           </div>
         </div>
       </div>

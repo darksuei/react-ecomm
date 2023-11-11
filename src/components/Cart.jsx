@@ -10,7 +10,7 @@ export default function Cart() {
   return (
     <div className="cartContainer container">
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-6" style={{marginTop:"4em"}}>
           {state?.map((cartProduct) => {
             return (
               <CartProduct cartProduct={cartProduct} dispatch={dispatch} />
@@ -36,6 +36,9 @@ export default function Cart() {
             total += x.sub_total;
           })}
           <div className="total"> ₹ {parseFloat(total).toFixed(2)}</div>
+          <button className="btn btn-outline-dark ms-2">
+            Pay
+          </button>
         </div>
       </div>
     </div>
